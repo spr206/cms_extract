@@ -3,3 +3,7 @@ Include
 Lib
 Scripts
 pyvenv.cfg
+html_output
+pdf_output
+Hyperlinks.htm
+links.txt

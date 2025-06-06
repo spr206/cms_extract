@@ -5,7 +5,7 @@
 
 import os
 import subprocess
-import wkhtmltopdf
+# import wkhtmltopdf
 
 
 # Define the Docker command prefix
@@ -15,7 +15,10 @@ docker_command_prefix = [
 ]
 
 # Get a list of all files in the /html_output/ directory
-html_files = os.listdir('C:\\Users\\steve\\pyStuff\\CMS\\html_output\\')
+# html_files = os.listdir('C:\\Users\\steve\\pyStuff\\CMS\\html_output\\')
+
+html_files = os.listdir('C:\\Users\\spr206\\OneDrive - UW\\Desktop\\python\\cms_extract\\html_output\\')
+
 
 # Iterate through each html file in the /html_output/ directory
 for html_file in html_files:

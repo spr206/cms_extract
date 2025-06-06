@@ -2,7 +2,7 @@ import os
 import requests
 import re
 
-def extract_order_id(url):
+def extract_orderid(url):
     match = re.search(r'orderid=(\d+)', url)
     if match:
         return match.group(1)
@@ -17,9 +17,9 @@ def download_files_from_urls(url_file_path, output_directory):
 
     for url in urls:
         url = url.strip()
-        order_id = extract_order_id(url)
-        if order_id:
-            filename = f"invoice_{order_id}"
+        orderid = extract_orderid(url)
+        if orderid:
+            filename = f"orderid_{orderid}"
         else:
             filename = "unknown"
 
